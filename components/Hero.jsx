@@ -1,13 +1,16 @@
 import Image from 'next/image'
 import ProfileImage from '../public/assets/profile.jpeg'
+import { FaHtml5, FaCss3Alt, FaReact } from 'react-icons/fa'
+import { IoLogoJavascript } from 'react-icons/Io'
+import { SiTailwindcss } from 'react-icons/Si'
 
 const HeroSection = () => {
   return (
-    <div className='relative pt-[100px] lg:pt-[150px] pb-[110px] bg-white'>
+    <div className='relative pt-[100px] lg:pt-[150px] pb-[50px] bg-white'>
       <div className=' mr-auto ml-auto  md:px-12'>
-        <div className='flex flex-wrap lg:flex-row-reverse px-4 md:px-4 xl:px-16 '>
+        <div className='flex flex-wrap lg:flex-row-reverse px-4 md:px-4 xl:px-16  '>
           <div className='w-full lg:w-5/12 px-8 pb-12'>
-            <div className='lg:text-right lg:ml-auto'>
+            <div className='lg:text-right lg:ml-auto '>
               <div className='relative inline-block z-10 pt-10 lg:pt-0'>
                 <Image
                   src={ProfileImage}
@@ -54,7 +57,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className='hidden lg:block lg:w-1/12 px-4'></div>
-          <div className='w-full lg:w-6/12 '>
+          <div className='w-full lg:w-6/12 lg:pt-10 '>
             <div className='hero-content text-center lg:text-left '>
               <h1
                 className='text-dark
@@ -82,40 +85,46 @@ const HeroSection = () => {
                 A Front-end Web Developer
               </h1>
 
-              <p className='text-sm mb-8 text-body-color text-center lg:text-left max-w-[600px]'>
+              <p className='text-sm mb-8 mx-8 text-body-color text-center lg:text-left max-w-[450px]'>
                 I&#39;m passionate about enhancing brand identities, building
                 unique websites, and making a positive impact to help ambitious
                 businesses grow.
               </p>
-              <div className='col-start-1 row-start-4 mt-10 flex flex-col justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 lg:justify-start'>
-                <a
-                  className='inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700'
-                  href='#about'
-                >
-                  <span>
-                    About Me
-                    <span
-                      aria-hidden='true'
-                      className='hidden text-slate-400 sm:inline'
-                    >
-                      →
-                    </span>
-                  </span>
-                </a>
-                <a
-                  className='inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-8 bg-slate-900 text-white hover:bg-slate-700'
-                  href='https://github.com/BrandonMerry'
-                >
-                  <span>
-                    Github
-                    <span
-                      aria-hidden='true'
-                      className='hidden text-slate-400 sm:inline'
-                    >
-                      →
-                    </span>
-                  </span>
-                </a>
+            </div>
+            <div ClassName=' flex flex-wrap text-center lg:text-left'>
+              <div className='w-full lg:w-6/12 text-center lg:text-left '>
+                <div className='flex justify-center space-x-4 text-center  lg:text-left  max-w-[330px] m-auto py-2'>
+                  <div className='flex flex-col items-center '>
+                    <div className='rounded-full text-2xl shadow-lg  p-2 cursor-pointer hover:scale-110'>
+                      <FaHtml5 />
+                    </div>
+                    <p className='pt-1  text-xs'>HTML</p>
+                  </div>
+                  <div className='flex flex-col items-center '>
+                    <div className='rounded-full text-2xl shadow-lg  p-2 cursor-pointer hover:scale-110'>
+                      <FaCss3Alt />
+                    </div>
+                    <p className='pt-1  text-xs'>CSS</p>
+                  </div>
+                  <div className='flex flex-col items-center '>
+                    <div className='rounded-full text-2xl shadow-lg  p-2 cursor-pointer hover:scale-110'>
+                      <IoLogoJavascript />
+                    </div>
+                    <p className='pt-1  text-xs'>JavaScript</p>
+                  </div>
+                  <div className='flex flex-col items-center '>
+                    <div className='rounded-full text-2xl shadow-lg  p-2 cursor-pointer hover:scale-110'>
+                      <FaReact />
+                    </div>
+                    <p className='pt-1  text-xs'>React</p>
+                  </div>
+                  <div className='flex flex-col items-center '>
+                    <div className='rounded-full text-2xl shadow-lg  p-2 cursor-pointer hover:scale-110'>
+                      <SiTailwindcss />
+                    </div>
+                    <p className='pt-1  text-xs'>Tailwind</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

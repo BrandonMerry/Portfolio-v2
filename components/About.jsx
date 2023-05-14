@@ -5,8 +5,8 @@ import AboutImg from '../public/assets/profile.jpeg'
 
 const About = () => {
   return (
-    <>
-      <div className='container mx-auto px-4 pb-32 lg:pt-5'>
+    <div className=' bg-black'>
+      <div className='container mx-auto px-4 pb-20 lg:pt-5'>
         <div className=' flex flex-wrap '>
           <div className='w-full md:w-5/12 px-4 pt-5 lg:pt-4 h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 md:pt-0'>
             <Image src={AboutImg} className='rounded-xl' alt='/' />
@@ -60,7 +60,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

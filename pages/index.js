@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/Hero'
 import About from '@/components/About'
+import Shopify from '@/components/Shopify'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <About />
+      <Shopify />
     </div>
   )
 }
